@@ -1,0 +1,11 @@
+<h1>Characters:</h1>
+
+<p>Total Members: <%= @count %></p>
+
+<% @characters.each do |char| %>
+  <ul>
+    <li><%= char.name %>
+    <li><p>Image: </p>
+    <img src=<%= char.photo_url %>/>
+  </ul>
+<% end %>
